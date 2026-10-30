@@ -1463,6 +1463,27 @@ img{object-fit:contain}
 .slide.praca.cont .h2{margin-bottom:0}
 /* com 2 cartões lado a lado (SC, SP, MG) e o cartão único (RJ, BA, PE), ainda maiores */
 .slide.praca .opsplit.c2 .rt b,.slide.praca .rcs.solo .rt b{font-size:120px}
+/* fichas como lista vertical: uma linha por rede, colunas alinhadas (30/10) */
+.slide.praca .opsplit,.slide.praca .opsplit.c2{grid-template-columns:1fr!important;gap:34px!important;align-content:center}
+.slide.praca .rcs,.slide.praca .rcs.n2,.slide.praca .rcs.n3,.slide.praca .rcs.solo{display:flex!important;flex-direction:column;gap:0!important}
+.slide.praca .rc,.slide.praca .rcs.solo .rc{display:grid!important;grid-template-columns:300px 190px minmax(0,1fr) minmax(0,1.15fr);column-gap:44px;row-gap:8px;align-items:center;padding:22px 0!important;border-top:1px solid var(--line)!important}
+.slide.praca .rc header{display:contents}
+.slide.praca .rc .rl2{grid-column:1;grid-row:1/span 2}
+.slide.praca .rc .rl2 img{max-height:96px!important;max-width:280px!important;width:auto!important;height:auto!important}
+.slide.praca .rc .rn{display:none}
+.slide.praca .rc .rt{grid-column:2;grid-row:1/span 2;align-items:flex-start}
+.slide.praca .rc .rt b,.slide.praca .opsplit.c2 .rt b,.slide.praca .rcs.solo .rt b{font-size:84px}
+.slide.praca .rc .rt span{font-size:18px}
+.slide.praca .rc .rstats{grid-column:3;grid-row:1/span 2;border:0!important;padding:0!important;gap:14px 34px!important}
+.slide.praca .rc .rs b{font-size:36px}
+.slide.praca .rc .rs span{font-size:16px}
+.slide.praca .rc .rsec{grid-column:4}
+.slide.praca .rc .rsec .rp{font-size:20px;line-height:1.4}
+.slide.praca .opbar{margin-bottom:4px}
+.slide.praca .rc{grid-template-columns:280px 170px minmax(0,1.25fr) minmax(0,1fr)}
+.slide.praca .rc .rstats{display:grid!important;grid-template-columns:repeat(4,auto);justify-content:start;column-gap:30px!important}
+.slide.praca .rc .rs b{font-size:34px}
+.slide.praca .rc .rs span{font-size:16px;white-space:normal}
 </style></head><body>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><linearGradient id="gboth" x1="0" y1="0" x2="1" y2="1"><stop offset="50%" stop-color="#ED1C24"/><stop offset="50%" stop-color="#19B356"/></linearGradient><pattern id="pboth" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="2" height="4" fill="#ED1C24"/><rect x="2" width="2" height="4" fill="#19B356"/></pattern></defs></svg>
 <div class="deck-viewport"><main class="deck-stage" id="deckStage">
