@@ -1579,6 +1579,21 @@ img{object-fit:contain}
 .pvs.c1 .pv-bars{gap:16px}
 .pvs.c1 .pv-leg{margin-bottom:6px}
 .pv-bars .pb-r{grid-template-columns:minmax(0,210px) minmax(0,1fr) 92px!important;gap:18px}
+
+/* === LINHAS ALTERNADAS (06/11): em toda lista de dados por linha, uma linha branca e a seguinte em cinza leve === */
+:root{--zebra:#F3F5F8}
+.lr-c li,.crow,.fu-r li,.lg-g li,.pv-bars .pb-r,.en-r,.tg{padding-left:12px!important;padding-right:12px!important}
+.lr-c li:nth-child(even),
+.crow:nth-child(even),
+.fu-r li:nth-child(odd):not(.fu-h),
+.lg-g li:nth-child(even),
+.pv-bars .pb-r:nth-child(even),
+.en-s .en-r:nth-of-type(even),
+.tg:nth-of-type(even){background:var(--zebra)}
+.pv-bars{gap:0!important}.pv-bars .pb-r{padding-top:8px;padding-bottom:8px}
+.rcs .rc:nth-child(even){background:var(--zebra)!important}
+.rcs .rc{padding-left:16px!important;padding-right:16px!important}
+.rcs .rc img,.lg-g li img,.lr-c li img,.crow img{mix-blend-mode:multiply}   /* logos com fundo branco não viram caixa sobre a linha cinza */
 </style></head><body>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><linearGradient id="gboth" x1="0" y1="0" x2="1" y2="1"><stop offset="50%" stop-color="#ED1C24"/><stop offset="50%" stop-color="#19B356"/></linearGradient><pattern id="pboth" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="2" height="4" fill="#ED1C24"/><rect x="2" width="2" height="4" fill="#19B356"/></pattern></defs></svg>
 <div class="deck-viewport"><main class="deck-stage" id="deckStage">
